@@ -13,7 +13,9 @@
 
   <div class="field">
     <%= form.label :city %>
-    <%= form.text_field :city %>
+    <%= form.select :city, [
+      ["Tokyo","Tokyo"], ["Kanagawa","Kanagawa"],["Chiba","Chiba"],["Ibaraki","Ibaraki"],["Saitama","Saitama"],["Gunma","Gunma"],["tochigi","tochigi"]
+    ]%>
   </div>
 
   <div class="actions">

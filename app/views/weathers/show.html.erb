@@ -3,6 +3,12 @@
 <p>
   <strong>City:</strong>
   <%= @weather.city %>
+
+  <% spot = weather_area(@weather.city)%>
+  <p>今の天気</p>
+  <p>天気:<%= spot["weather"][0]["description"] %></p>
+  <p>温度:<%= spot["main"]["temp"]%></p>
+  <p>湿度:<%= spot["main"]["humidity"]%></p>
 </p>
 
 <%= link_to 'Edit', edit_weather_path(@weather) %> |

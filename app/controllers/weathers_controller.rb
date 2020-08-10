@@ -71,4 +71,7 @@ class WeathersController < ApplicationController
     def weather_params
       params.require(:weather).permit(:city)
     end
-end
+
+
+  end
+
